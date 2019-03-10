@@ -2,48 +2,15 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"  content="Периодическая таблица элементов Менделеева" />
 	<meta name="keywords"  content="html,css,html5,css3"/>
     <title>Периодическая таблица элементов Д.И.Менделеева</title>
-    <style>
-
-h1 {text-align: center; text-transform: uppercase;font-weight: 900; font-family: Arial; font-size: 20px; line-height: 24px;}
-
-caption {text-transform: uppercase; font-weight: 900; font-family: Arial; font-size: 16px; line-height: 24px;}
-
-div {padding: 1%;}
-
-.base number {display: block; font-size: 10px; font-family: Arial; line-height: 10px;}
-.base nelement {display: block; font-size: 40px; font-weight: bold; font-family: Times New Roman; line-height: 36px;}
-.base atomic_number {display: block; font-size: 10px; font-family: Arial; line-height: 10px;}
-.base element_name {display: block; font-size: 12px; font-family: Arial; text-transform: uppercase; font-stretch: extra-condensed; font-weight: 600;}
-
-.right number {text-align: right;}
-.right nelement {text-align: left;}
-.right atomic_number {text-align: right;}
-.right element_name {text-align: left;}
-
-.left number {text-align: left;}
-.left nelement {text-align: right;}
-.left atomic_number {text-align: left;}
-.left element_name {text-align: right;}
-
-.red 	nelement {color: red;}
-.blue 	nelement {color: blue;}
-.yellow   nelement {color: yellow;}
-
-td img{display: block; margin-left: auto; margin-right: auto;}
-
-.col {font-size: 16px; font-weight: 600; text-align: center;}
-.tdinfo {line-height: 10px; font-family: Arial; font-size: 12px;}
-.divinfo {display: inline-flex; width: 100%;}
-
-	</style>
 </head>
 <body>
 <div>
-<table style="width: 100%;" border="1">
+<table class="main-table" border="1">
     <col width="2%">
     <col width="9%">
     <col width="9%">
@@ -62,7 +29,7 @@ td img{display: block; margin-left: auto; margin-right: auto;}
 <td colspan="5" rowspan="2"><h1>Периодическая таблица элементов Д.И.Менделеева</h1></td>
 <td class="col">VII</td>
 <td class="col">VIII&nbsp;</td>
-<td colspan="2" rowspan="5"><img src="mendeleev.png" alt="" height="200" />&nbsp;</td>
+<td colspan="2" rowspan="5"><img src="img/mendeleev.png" alt="" height="200" />&nbsp;</td>
 </tr>
 <tr>
 <td class="col" rowspan="2">1</td>
@@ -1132,7 +1099,7 @@ td img{display: block; margin-left: auto; margin-right: auto;}
             Литий
             </element_name>            
         </div></td>
-        <td><div class="base">
+        <td><div class="base" style="background-color: grey;">
             <number>
             - Атомный номер
             </number>
@@ -1257,7 +1224,7 @@ td img{display: block; margin-left: auto; margin-right: auto;}
 </tbody>
 </table>
 
-<table style="width: 100%; table-layout: fixed;" border="1">
+<table class="additional-table" border="1">
     <caption>* Лантаноиды</caption>
 <tbody>
 <tr>
@@ -1474,7 +1441,7 @@ td img{display: block; margin-left: auto; margin-right: auto;}
 </tr>
 </tbody>
 </table>
-<table style="width: 100%; table-layout: fixed;" border="1">
+<table class="additional-table" border="1">
     <caption>** Актиноиды</caption>
 <tbody>
 <tr>
